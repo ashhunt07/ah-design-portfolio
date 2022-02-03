@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+
+<html class="no-js">
+    <head>
+        
+        
+        <meta charset="UTF-8" />
+        
+        <!--Don't forget to fill these out!-->
+        <title>HOME | Design Portfolio</title>
+        <meta name="Media Queries" content="Media Queries" />
+        
+        
+        <!--Links to the main Style Sheet-->
+        <link href="main.css" rel="stylesheet" type="text/css" />
+        
+        <!--Links to a modernizer JavaScript file that fixes a lot of issues with old browsers-->
+        <script src="js/modernizr.js"></script>
+        
+        <!--Makes the site so it won't scale down on small devices -->
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  		
+        <!-- allow for mobile viewing -->
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		
+		
+		<!-- jQuery library (served from Google) -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+        
+        <!-- bxSlider Javascript file -->
+		<script src="jquery/jquery.bxslider.min.js"></script>
+        
+        <!-- bxSlider CSS file -->
+		<link href="jquery/jquery.bxslider.css" rel="stylesheet" />
+       
+        
+     
+		<!--GOOGLE ANYALYTICS -->
+		
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-80352411-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-80352411-1');
+		</script>
+
+
+        
+        
+           
+        
+	</head>
+
+    <body>
+        
+        <div id="wrapper">
+          
+            <header>
+
+
+                <nav>
+                    <a href="index.html"> <img class="logo" src="images/ashley-brand.png" alt="Ashley Hunt Design logo"/> <p class="webname">Designed By Ash</p> </a>
+                    <ul>
+                    <li ><a href="index.html" class="active">work</a></li>
+                    <li><a href="about.html">about</a></li>
+                    </ul>
+                 </nav>
+
+   		
+      
+                
+            </header>   
+
+            
+    <!-- header -->
+			
+			
+			<main>
+	
+			
+				<div class="portPone">
+					<a href="portfolio/gardenparty.html">
+						<img src="images/gp-header.jpg" alt="Garden Party index header Ashley Hunt Design" />
+						<div class="top">
+							<h1>garden party</h1>
+						</div>
+					</a>
+				</div>	
+				
+					
+				<div class="portPtwo">
+					<a href="portfolio/luckybastard.html">
+						<img src="images/lb-header.jpg" alt="Lucky Bastard Co index header Ashley Hunt Design" />	
+						<div class="top">
+							<h1>lucky bastard co</h1>
+						</div>
+					</a>
+				</div>	
+				
+					
+				<div class="portPtwo">
+					<a href="portfolio/loliware.html">
+						<img src="images/lw-header.jpg" alt="LOLIWARE index header Ashley Hunt Design" />
+						<div class="top">
+							<h1>loliware</h1>
+						</div>
+					</a>
+				</div>	
+				
+					
+				<div class="portPone">
+					<a href="portfolio/maisonpixel.html">
+						<img src="images/mp-header.jpg" alt="Maison Pixel index header Ashley Hunt Design" />
+						<div class="top">
+							<h1>maison pixel</h1>
+						</div>
+					</a>
+				</div>	
+				
+					
+				<div class="portPone">
+					<a href="portfolio/coo.html">
+						<img src="images/coo-header.jpg" alt="Coo Dating appd index header Ashley Hunt Design" />
+						<div class="top">
+							<h1>coo</h1>
+						</div>
+					</a>
+				</div>	
+				
+					
+				<div class="portPtwo">
+					<a href="portfolio/acheive.html">
+						<img src="images/ac-header.jpg" alt=" achieve autism game app index header Ashley Hunt Design" />
+						<div class="top">
+							<h1>achieve</h1>
+						</div>
+					</a>
+				</div>	
+				
+				
+
+			
+			</main>
+         
+            
+<!-- footer -->                
+            <footer>
+				
+				
+				<div class="portNav">
+				
+					
+						<a href="portfolio/gardenparty.html"> garden party</a>
+						
+						<a href="portfolio/luckybastard.html">lucky bastard</a>
+						
+						<a href="portfolio/loliware.html"> loliware</a>
+						
+						<a href="portfolio/maisonpixel.html"> maison pixel</a>
+					
+						<a href="portfolio/coo.html">coo</a>
+					
+						<a href="portfolio/acheive.html">achieve</a>
+						
+				
+				</div>
+				
+				<p class="footleft">ashleyhuntdesign@gmail.com</p>
+				
+				<p class="footright">coded by: Ashley Hunt</p>
+				
+				
+               
+
+
+            </footer>
+             
+<!--end footer-->
+            
+       </div><!-- end wrapper -->     
+            
+<!--Javascript/JQuery start here-->
+        
+        
+<!--JAVA-->        
+        
+         <!-- This is what makes the sticky header work-->
+
+
+  <script>
+           $(document).ready(function(){
+               $(window).bind('scroll', function() {
+               var navHeight = 65;
+                     if ($(window).scrollTop() > navHeight) {
+                         $('nav').addClass('fixed');
+                     }
+                     else {
+                         $('nav').removeClass('fixed');
+                     }
+                });
+            });
+        </script>
+		
+		<script type="text/javascript">
+            $(function() {
+                  $('a[href*=#]:not([href=#])').click(function() {
+                    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+                      var target = $(this.hash);
+                      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                      if (target.length) {
+                        $('html,body').animate({
+                          scrollTop: target.offset().top
+                        }, 1000);
+                        return false;
+                      }
+                    }
+                  });
+                });
+        </script>
+        
+        
+    <!--Slider-->
+        
+        
+    <!--REPEAT ANIMATION FROM DIV-->
+  
+        
+	
+    </body>
+</html>

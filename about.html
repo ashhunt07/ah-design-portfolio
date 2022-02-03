@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+
+<html class="no-js">
+    <head>
+        
+        
+        <meta charset="UTF-8" />
+        
+        <!--Don't forget to fill these out!-->
+        <title>About | Ashley Hunt</title>
+        <meta name="Media Queries" content="Media Queries" />
+        
+        
+        <!--Links to the main Style Sheet-->
+        <link href="main.css" rel="stylesheet" type="text/css" />
+        
+        <!--Links to a modernizer JavaScript file that fixes a lot of issues with old browsers-->
+        <script src="js/modernizr.js"></script>
+        
+        <!--Makes the site so it won't scale down on small devices -->
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  		
+        <!-- allow for mobile viewing -->
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		
+		
+		<!-- jQuery library (served from Google) -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+        
+        <!-- bxSlider Javascript file -->
+		<script src="jquery/jquery.bxslider.min.js"></script>
+        
+        <!-- bxSlider CSS file -->
+		<link href="jquery/jquery.bxslider.css" rel="stylesheet" />
+       
+      
+		
+		<!--GOOGLE ANYALYTICS -->
+		
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-80352411-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-80352411-1');
+		</script>
+
+
+		
+           
+        
+	</head>
+
+    <body>
+        
+        <div id="wrapper">
+          
+            <header>
+               
+
+                <nav>
+                    
+                    <a href="index.html"> <img class="logo" src="images/ashley-brand.png" alt="Ashley Hunt Design logo"/> </a>
+                    <ul>
+                    <li ><a href="index.html">work</a></li>
+                    <li><a href="about.html" class="active">about</a></li>
+                    </ul>
+                 </nav>
+
+                
+                
+            </header>   
+
+            
+    <!-- header -->
+            
+            <main>       
+                
+                <img class="self" src="images/ashley-photo.JPG"alt="Picture of Ashley Hunt" />
+                
+                <div class="bio">
+                    <h2> Coder. Designer. Night Owl. </h2>
+
+                    <p>
+						Hello! I'm Ashley, I am a graduate of Texas State Graduate with a Bachelor of Fine Arts in Communication Design and a Bachelor of Science in Advertising. I enjoy long hours of coding and complex problem solving with the smallest victories making all of those hours worthwhile. Being able to create sensible and intuitive user flows with reduced clicks and page changes is my passion. So, front-end development and UX design is where I would call home. 
+					</p>
+					<p>
+						I am a homebody gamer that loves to go on hikes or jogs to relax; especially after a long night at work. Days off are usually spent with my boyfriend and corgi in front of the TV playing Xbox. Games that require tact and critical thinking are my first choice, especially when they have challenging boss fights.  
+					</p> 
+					<p>
+						The soundtrack of my life is sung by my corgi, Maverick, who performs best in the middle of the night when I am trying to sleep.
+					</p>	
+						
+                    
+                    
+                <a class="social" href="https://www.linkedin.com/in/huntashley/" target="_blank" alt="linkedin logo link">
+                    <img src="images/linkedin_2.png"  />
+                </a> 
+                                    
+                 <a class="social" href="https://www.pinterest.com/ashtastic11/" target="_blank" alt="pinterest logo link">
+                    <img src="images/pinterest_2.png" />
+                </a>        
+                    
+                    
+              
+                    
+                    
+                </div>
+                <!--Social Feed?-->
+                
+            </main>  
+            
+<!-- footer -->                
+           <footer>
+				
+				
+			<div class="portNav">
+				
+					
+						<a href="portfolio/gardenparty.html"> garden party</a>
+						
+						<a href="portfolio/luckybastard.html">lucky bastard</a>
+						
+						<a href="portfolio/loliware.html"> loliware</a>
+						
+						<a href="portfolio/maisonpixel.html"> maison pixel</a>
+					
+						<a href="portfolio/coo.html">coo</a>
+					
+						<a href="portfolio/acheive.html">achieve</a>
+						
+				
+				</div>
+				
+				
+				<p class="footleft">ashleyhuntdesign@gmail.com</p>
+				
+				<p class="footright">coded by: Ashley Hunt</p>
+				
+			
+            </footer>
+             
+<!--end footer-->
+            
+       </div><!-- end wrapper -->     
+            
+<!--Javascript/JQuery start here-->
+        
+        
+<!--JAVA-->        
+        
+         <!-- This is what makes the sticky header work-->
+
+
+  <script>
+           $(document).ready(function(){
+               $(window).bind('scroll', function() {
+               var navHeight = 65;
+                     if ($(window).scrollTop() > navHeight) {
+                         $('nav').addClass('fixed');
+                     }
+                     else {
+                         $('nav').removeClass('fixed');
+                     }
+                });
+            });
+        </script>
+		
+		<script type="text/javascript">
+            $(function() {
+                  $('a[href*=#]:not([href=#])').click(function() {
+                    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+                      var target = $(this.hash);
+                      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                      if (target.length) {
+                        $('html,body').animate({
+                          scrollTop: target.offset().top
+                        }, 1000);
+                        return false;
+                      }
+                    }
+                  });
+                });
+        </script>
+        
+        
+    <!--Slider-->    
+  
+    
+    </body>
+</html>
